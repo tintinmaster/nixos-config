@@ -4,10 +4,9 @@
     ./kitty.nix
     ./wofi.nix
 		
-		./hyprlock.nix
-		./hypridle.nix
-
+		./wms/hypridle.nix
 		./wms/hyprland.nix
+		./wms/hyprlock.nix
 		./wms/waybar.nix
 	];
 }

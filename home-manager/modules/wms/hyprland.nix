@@ -5,6 +5,7 @@
 
 		settings = {
 			"$mainMod" = "SUPER";	
+      "$shiftMod" = "SUPER_SHIFT";
 			"$terminal" = "kitty";
 
 			monitor = [
@@ -21,6 +22,7 @@
 				"QT_QPA_PLATFORM,xcb"
 				"XDG_SCREENSHOTS_DIR,~/screens"
 				"NIXOS_OZONE_WL,1"
+        "HYPRSHOT_DIR,~/Pictures/Screenshots"
 			];
 
 			debug = {
@@ -160,7 +162,7 @@
         # Screenshot a monitor
         ", PRINT, exec, hyprshot -m output"
         # Screenshot a region
-        "SUPER_SHIFT, PRINT, exec, hyprshot -m region"
+        "$shiftMod, PRINT, exec, hyprshot -m region"
 
 # Move focus with mainMod + arrow keys
 				"$mainMod, left,  movefocus, l"
