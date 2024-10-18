@@ -1,7 +1,9 @@
-{ pkgs, ... }: {
+{ pkgs, pkgs-stable, ... }: {
 	nixpkgs.config = {
 		allowUnfree = true;
 	};
+
+
 
 	environment.systemPackages = with pkgs; [
 		#Desktop Apps
@@ -35,7 +37,7 @@
 
 		# Wayland stauff
 		brightnessctl
-    cliphist
+    pkgs-stable.cliphist # Only currently as release is broken
 		libsForQt5.qt5.qtwayland
 		qt5.qtwayland
 		qt6.qtwayland
