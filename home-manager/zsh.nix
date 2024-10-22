@@ -22,6 +22,7 @@
 			ll = "ls -l";
 			v = "nvim";
 			se = "sudoedit";
+      lg = "lazygit";
 		};
 
 
