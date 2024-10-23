@@ -19,7 +19,7 @@
 			pkgs = "nvim ${flakeDir}/nixos/packages.nix";
 			upkgs = "nvim ${flakeDir}/home-manager/user-packages.nix";
 
-			ll = "ls -l";
+			ll = "ls -lh";
 			v = "nvim";
 			se = "sudoedit";
       lg = "lazygit";
