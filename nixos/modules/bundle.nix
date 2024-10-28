@@ -6,6 +6,7 @@
 		./user.nix
 		./xserver.nix
 		./libinput.nix
+    ./printing.nix
 		./nm.nix
 		./virtmanager.nix
 		./hyprland.nix

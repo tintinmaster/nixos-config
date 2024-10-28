@@ -23,16 +23,17 @@
     btop
     fastfetch
     file
+    fzf
     git
     htop
     imv
     lazygit
     neofetch
+    tio
     tree
     unzip
     wget
     zip
-    fzf
 
     # Wayland stauff
     brightnessctl
@@ -66,6 +67,9 @@
     home-manager
     kitty
     xdg-utils
+
+    #Master thesis
+    gpsd
   ];
 
   fonts.packages = with pkgs; [

@@ -8,7 +8,7 @@
 		users.tim = {
 			isNormalUser = true;
 			description = "Tim";
-			extraGroups = [ "networkmanager" "wheel" "input" "libvirtd" "plugdev" ];
+			extraGroups = [ "networkmanager" "wheel" "input" "libvirtd" "plugdev" "dialout" "lp" ];
 			packages = with pkgs; [];
 		};
 	};
