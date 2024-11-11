@@ -1,18 +1,19 @@
 {
 	imports = [
 		./bootloader.nix
-		./sound.nix
+		./bluetooth.nix
 		./env.nix
-		./user.nix
-		./xserver.nix
-		./libinput.nix
-    ./printing.nix
-		./nm.nix
-		./virtmanager.nix
 		./hyprland.nix
 		#./hyprlock.nix
-		./bluetooth.nix
-		./udev.nix
+		./libinput.nix
 		./nixvim/nixvim.nix
+		./nm.nix
+    ./printing.nix
+    ./security.nix
+		./sound.nix
+		./udev.nix
+		./user.nix
+		./virtmanager.nix
+		./xserver.nix
 	];
 }
