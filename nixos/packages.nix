@@ -16,6 +16,7 @@
     gcc
     clang-tools
     vim
+    jetbrains.clion
 
     # CLI utils
     bluez

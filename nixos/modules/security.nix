@@ -1,9 +1,14 @@
 {
   security.pam.services = {
     login = {
-      limits = ''
-        @usrp - rtprio 99
-      '';
+      limits = [
+        {
+          domain = "@usrp";
+          type = "-";
+          item = "rtprio";
+          value = 99;
+        }
+      ];
     };
   };
 }
