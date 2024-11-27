@@ -3,12 +3,12 @@
 	
 	home.packages = with pkgs; [
 		chatterino2
+    ferdium
+    kitty-themes
 		signal-desktop
 		spotify
 		thunderbird
-		zathura
-    ferdium
-    kitty-themes
     vscodium
+		zathura
 	];
 }

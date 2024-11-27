@@ -30,6 +30,7 @@
     imv
     lazygit
     neofetch
+    playerctl
     tio
     tree
     unzip
