@@ -24,13 +24,13 @@
 
         "keyboard-state" = {
             #numlock = true;
-            capslock = true;
+            #capslock = true;
             format = "{icon}";
-            binding-keys = "[42, 54]";
-            format-icons = {
-                locked = " ";
-                unlocked = "";
-            };
+            #binding-keys = "[42, 54]";
+            #format-icons = {
+            #    locked = " ";
+            #    unlocked = "";
+            #};
         };
 
 
@@ -73,7 +73,7 @@
         "pulseaudio" = {
             # scroll-step = 1; # %, can be a float
             reverse-scrolling = 1;
-            format = "{volume}% {icon} {format_source}";
+            format = "{volume}% {icon}  {format_source}";
             format-bluetooth = "{volume}% {icon} {format_source}";
             format-bluetooth-muted = " {icon} {format_source}";
             format-muted = " {format_source}";
@@ -254,8 +254,8 @@ window#waybar.hidden {
 
 #network{
     margin-right: 8px;
-    padding-left: 16px;
-    padding-right: 16px;
+    padding-left: 8px;
+    padding-right: 8px;
     border-radius: 10px;
     transition: none;
     color: #ffffff;
@@ -264,8 +264,8 @@ window#waybar.hidden {
 
 #pulseaudio {
     margin-right: 8px;
-    padding-left: 16px;
-    padding-right: 16px;
+    padding-left: 8px;
+    padding-right: 8px;
     border-radius: 10px;
     transition: none;
     color: #ffffff;
@@ -289,8 +289,8 @@ window#waybar.hidden {
 
 #cpu {
     margin-right: 8px;
-    padding-left: 16px;
-    padding-right: 16px;
+    padding-left: 8px;
+    padding-right: 8px;
     border-radius: 10px;
     transition: none;
     color: #ffffff;
@@ -313,8 +313,8 @@ window#waybar.hidden {
 
 #backlight {
     margin-right: 8px;
-    padding-left: 16px;
-    padding-right: 16px;
+    padding-left: 8px;
+    padding-right: 8px;
     border-radius: 10px;
     transition: none;
     color: #ffffff;
@@ -323,8 +323,8 @@ window#waybar.hidden {
 
 #battery {
     margin-right: 8px;
-    padding-left: 16px;
-    padding-right: 16px;
+    padding-left: 8px;
+    padding-right: 8px;
     border-radius: 10px;
     transition: none;
     color: #ffffff;

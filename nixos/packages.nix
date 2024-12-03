@@ -17,6 +17,8 @@
     clang-tools
     vim
     jetbrains.clion
+    jetbrains.pycharm-professional
+    jetbrains.rust-rover
 
     # CLI utils
     bluez

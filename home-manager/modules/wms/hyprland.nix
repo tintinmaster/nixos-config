@@ -34,8 +34,6 @@
 				kb_layout = "de";
 				kb_variant = "neo";
 
-				follow_mouse = 1;
-
 				touchpad.natural_scroll = true;
 			};
 
@@ -129,7 +127,7 @@
 
 			exec-once = [
 				"swww init"
-				"swww img ~/Pictures/dracula-spooky.png"
+				"swww img ~/Pictures/dracula-nixos.png"
 				"dunst"
 				"waybar"
 				"hypridle"
@@ -218,7 +216,7 @@
 				", XF86AudioRaiseVolume, exec, pamixer -i 5 "
 				", XF86AudioLowerVolume, exec, pamixer -d 5 "
 				", XF86AudioMute, exec, pamixer -t"
-				", XF86AudioMicMute, exec, pamixer --default-source -m"
+				", XF86AudioMicMute, exec, pamixer --default-source -t"
 
 # Brightness control
 				", XF86MonBrightnessDown, exec, brightnessctl set 5%- "
