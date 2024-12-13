@@ -20,16 +20,24 @@
     jetbrains.pycharm-professional
     jetbrains.rust-rover
 
+    #Writing
+    typst
+    tinymist
+    typstyle
+
     # CLI utils
     bluez
     bluez-tools
     btop
+    udisks
     fastfetch
+    flashrom
     file
     fzf
     git
     htop
     imv
+    imagemagick
     lazygit
     neofetch
     playerctl
@@ -67,6 +75,8 @@
     pulseaudio
 
     #Other
+    darktable
+    davfs2
     enpass
     home-manager
     kitty
@@ -84,6 +94,6 @@
     font-awesome
     powerline-fonts
     powerline-symbols
-    (nerdfonts.override { fonts = [ "NerdFontsSymbolsOnly" "FiraCode" ]; })
+    (nerdfonts.override { fonts = [ "NerdFontsSymbolsOnly" ]; })
   ];
 }

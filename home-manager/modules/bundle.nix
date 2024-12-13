@@ -1,5 +1,6 @@
 {
 	imports = [
+    ./cursor.nix
 		./git.nix
     ./kitty.nix
     ./wofi.nix

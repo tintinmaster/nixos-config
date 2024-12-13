@@ -22,7 +22,7 @@
 				"QT_QPA_PLATFORM,xcb"
 				"XDG_SCREENSHOTS_DIR,~/screens"
 				"NIXOS_OZONE_WL,1"
-        "HYPRSHOT_DIR,~/Pictures/Screenshots"
+        "HYPRSHOT_DIR,/home/tim/Pictures/Screenshots"
 			];
 
 			debug = {
@@ -61,11 +61,11 @@
 					passes = 2;
 				};
 
-				drop_shadow = true;
-				shadow_range = 60;
-				shadow_render_power = 3;
+        #drop_shadow = true;
+        #shadow_range = 60;
+        #shadow_render_power = 3;
 
-				"col.shadow" = "rgba(1E202966)";
+        #"col.shadow" = "rgba(1E202966)";
 			};
 
 			
@@ -123,7 +123,10 @@
         "workspace special, ^(Ferdium)$"
 			];
 
-			windowrulev2 = "bordercolor rgb(ff5555),xwayland:1"; # check if window is xwayland
+      windowrulev2 = [
+        "bordercolor rgb(ff5555),xwayland:1" # check if window is xwayland
+        "idleinhibit fullscreen, fullscreen:1"
+      ];
 
 			exec-once = [
 				"swww init"
@@ -150,7 +153,8 @@
 				"$mainMod, D, exec, wofi --show drun"
 				"$mainMod, P, pseudo, # dwindle"
 				"$mainMod, J, togglesplit, # dwindle"
-				"$mainMod, L, exec, pidof hyprlock || hyprlock"
+				"$mainMod, L, exec, pidof hyprlock || hyprlock > ~/hyprlock.log"
+        "$mainMod, Q, exec, ~/nix/scripts/art.sh > ~/testing.log"
         "ALT, X, togglespecialworkspace"
 
 

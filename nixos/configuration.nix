@@ -44,8 +44,9 @@
   services.displayManager.sddm.wayland.enable = true;
   services.displayManager.sddm.theme = "maldives";
 
-  hardware.ipu6.enable = true;
-  hardware.ipu6.platform = "ipu6ep";
+  #nixpkgs.config.allowBroken = true;
+  #hardware.ipu6.enable = true;
+  #hardware.ipu6.platform = "ipu6ep";
 
   system.stateVersion = "24.05"; # Don't change it 
 }

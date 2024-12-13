@@ -29,14 +29,15 @@
 				
 				{
 					timeout = 360;
-					on-timeout = "hyprctl disptach dpms off";
-					on-resume = "hyprctl dipsatch dpms on";
+					on-timeout = "hyprctl dispatch dpms off";
+					on-resume = "hyprctl dispatch dpms on";
 				}
 
-				#{
-				#	timeout = 1800;
-				#	on-timeout = "systemctl suspend";
-				#}
+				{
+					timeout = 1800;
+					on-timeout = "systemctl hyprid-sleep";
+				}
+
 			];
 		};
 	};

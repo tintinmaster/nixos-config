@@ -11,7 +11,7 @@ metadata=$(printf "$artist - $album")
 if [[ "$url" == "No players found" || -z "$url" ]];
 then
   exit
-elif [ -f ~/.cache/albumart/"$metadata".png ]
+elif [[ -f ~/.cache/albumart/"$metadata".png ]];
 then
   echo ~/.cache/albumart/"$metadata".png
 else
