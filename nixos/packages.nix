@@ -10,7 +10,17 @@
     zoom-us
 
     # Coding stuff
-    (python3.withPackages (ps: with ps; [ requests pyquery ]))
+    (python3.withPackages (ps: with ps; [
+      pip
+      numpy
+      scipy
+      jupyter
+      notebook
+      python-dotenv
+      pandas
+      requests 
+      pyquery 
+    ]))
     cachix
     devenv
     gcc
@@ -61,6 +71,7 @@
     hypridle
     hyprland
     hyprlock
+    hyprshade
     hyprshot
     seatd
     swww 		  #Wallpaper
@@ -81,6 +92,7 @@
     home-manager
     kitty
     xdg-utils
+    wireguard-tools
 
     #Master thesis
     gpsd

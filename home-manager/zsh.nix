@@ -23,6 +23,7 @@
 			v = "nvim";
 			se = "sudoedit";
       lg = "lazygit";
+      ssh = "kitten ssh";
 		};
 
 

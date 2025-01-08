@@ -4,7 +4,7 @@
 
     settings = {
       enable_audio_bell = false;
-      visual_bell_duration = "2.0";
+      visual_bell_duration = "1.0";
 
 
 
