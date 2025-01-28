@@ -26,6 +26,7 @@
     gcc
     clang-tools
     vim
+    neovim
     jetbrains.clion
     jetbrains.pycharm-professional
     jetbrains.rust-rover

@@ -10,7 +10,7 @@
 
 			monitor = [
 			"desc:LG Display 0x06CE, 1920x1200, auto, 1"
-			",preffered, auto-up, 1"
+			",preffered, auto-right, 1"
 			];
 
 			env = [

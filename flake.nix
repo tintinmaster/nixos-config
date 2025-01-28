@@ -16,31 +16,32 @@
 			inputs.nixpkgs.follows = "nixpkgs";
 		};
 
-		nixvim = {
-			# If you are not running an unstable channel of nixpkgs, select the corresponding branch of nixvim.
-			# url = "github:nix-community/nixvim/nixos-24.11";
-			url = "github:nix-community/nixvim";
-			inputs.nixpkgs.follows = "nixpkgs";
-		};
 	};
 
-	outputs = { self, nixpkgs, home-manager, ... }@inputs: 
+	outputs = { self, nixpkgs, nixpkgs-stable, home-manager, ... }@inputs: 
 
 		let
 			system = "x86_64-linux";
+			pkgs = nixpkgs.legacyPackages.${system};
+      pkgs-stable = nixpkgs-stable.legacyPackages.${system};
 		in {
 
 		nixosConfigurations.nixos = nixpkgs.lib.nixosSystem {
 			inherit system;
 			modules = [
 				./nixos/configuration.nix
-				inputs.nixvim.nixosModules.nixvim
 			];
+      specialArgs = {
+        inherit pkgs-stable;
+      };
 		};
 
 		homeConfigurations.tim = home-manager.lib.homeManagerConfiguration {
-			pkgs = nixpkgs.legacyPackages.${system};
+      inherit pkgs;
 			modules = [ ./home-manager/home.nix ];
+      extraSpecialArgs = {
+        inherit pkgs-stable;
+      };
 		};
 	};
 }
