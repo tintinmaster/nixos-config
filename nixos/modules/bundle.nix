@@ -6,11 +6,12 @@
 		./hyprland.nix
 		#./hyprlock.nix
 		./libinput.nix
+		./nixvim/default.nix
 		./nm.nix
-    ./printing.nix
-    ./security.nix
+		./printing.nix
+		./security.nix
 		./sound.nix
-    ./tlp.nix
+		./tlp.nix
 		./udev.nix
 		./user.nix
 		./virtmanager.nix
