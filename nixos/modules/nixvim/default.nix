@@ -1,8 +1,15 @@
 {
-	programs.nixvim = {
-		enable = true;
+  imports = [
+    ./opts.nix
+    ./keymaps.nix
+    ./autocmds.nix
+    ./plugins/plugins-bundle.nix
+  ];
 
-		defaultEditor = true;
-		colorschemes.dracula.enable = true;
-	}
+  programs.nixvim = {
+    enable = true;
+
+    defaultEditor = true;
+    colorschemes.dracula.enable = true;
+  };
 }

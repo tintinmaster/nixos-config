@@ -41,6 +41,7 @@
     btop
     udisks
     fastfetch
+    fd
     flashrom
     file
     fzf
@@ -51,6 +52,7 @@
     lazygit
     neofetch
     playerctl
+    ripgrep
     tio
     tree
     unzip
