@@ -10,6 +10,7 @@
 				flakeDir = "~/nix";
 			in {
 			rb = "sudo nixos-rebuild switch --flake ${flakeDir}";
+			rbt = "sudo nixos-rebuild test --flake ${flakeDir}";
 			upd = "nix flake update --flake ${flakeDir}";
 			upg = "sudo nixos-rebuild switch --upgrade --flake ${flakeDir}";
 

@@ -4,13 +4,15 @@
 		xwayland.enable = true;
 
 		settings = {
-			"$mainMod" = "SUPER";	
+			"$mainMod" = "SUPER";
       "$shiftMod" = "SUPER_SHIFT";
 			"$terminal" = "kitty";
 
 			monitor = [
 			"desc:LG Display 0x06CE, 1920x1200, auto, 1"
-			",preffered, auto-right, 1"
+      "desc:Ancor Communications Inc VS278 F3LMQS135349, preffered, auto-up, 1"
+        #"desc:Dell Inc. DELL U2723QE 10W4934, preffered, auto-right, 1"
+			",preffered, auto-right, auto"
 			];
 
 			env = [
@@ -68,7 +70,6 @@
         #"col.shadow" = "rgba(1E202966)";
 			};
 
-			
 			group = {
 				groupbar = {
 					"col.active" = "rgb(bd93f9) rgb(44475a) 90deg";

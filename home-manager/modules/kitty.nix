@@ -39,5 +39,14 @@
       mark1_foreground = "#282a36";
       mark1_background = "#ff5555";
     };
+
+    keybindings = {
+      "ctrl+plus" = "change_font_size all +1.0";
+      "ctrl+kp_plus" = "change_font_size all +1.0";
+      "ctrl+minus" = "change_font_size all -1.0";
+      "ctrl+kp_minus" = "change_font_size all -1.0";
+      "ctrl+shift+c" = "copy_and_clear_or_interrupt";
+      "ctrl+c" =  "copy_or_interrupt";
+    };
   };
 }

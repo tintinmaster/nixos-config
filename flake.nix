@@ -21,9 +21,11 @@
 			inputs.nixpkgs.follows = "nixpkgs";
 		};
 
+    zen-browser.url = "github:MarceColl/zen-browser-flake";
+
 	};
 
-	outputs = { self, nixpkgs, nixpkgs-stable, home-manager, ... }@inputs: 
+	outputs = { self, nixpkgs, nixpkgs-stable, home-manager, nixvim, zen-browser, ... }@inputs:
 
 	let
 		system = "x86_64-linux";
@@ -47,6 +49,7 @@
 			modules = [ ./home-manager/home.nix ];
 			extraSpecialArgs = {
 				inherit pkgs-stable;
+        inherit zen-browser;
 			};
 		};
 	};

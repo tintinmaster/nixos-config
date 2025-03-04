@@ -6,6 +6,7 @@
   environment.systemPackages = with pkgs; [
     #Desktop Apps
     firefox
+    chromium
     obsidian
     zoom-us
 
@@ -20,6 +21,7 @@
       pandas
       requests 
       pyquery 
+      udiskie
     ]))
     cachix
     devenv
@@ -53,6 +55,7 @@
     neofetch
     playerctl
     ripgrep
+    sshfs
     tio
     tree
     unzip

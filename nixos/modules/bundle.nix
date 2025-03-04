@@ -11,6 +11,7 @@
 		./printing.nix
 		./security.nix
 		./sound.nix
+		./ssh.nix
 		./udev.nix
 		./user.nix
 		./virtmanager.nix

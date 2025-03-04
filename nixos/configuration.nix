@@ -28,6 +28,8 @@
     LC_TIME = "de_DE.UTF-8";
   };
 
+  nix.settings.download-buffer-size = 500000000;
+
   nix.settings.experimental-features = ["nix-command" "flakes"];
   nix.settings.trusted-users = [ "root" "tim" ];
 
@@ -44,6 +46,8 @@
   services.displayManager.sddm.enable = true;
   services.displayManager.sddm.wayland.enable = true;
   services.displayManager.sddm.theme = "maldives";
+
+  services.udisks2.enable = true;
 
   #nixpkgs.config.allowBroken = true;
   #hardware.ipu6.enable = true;
