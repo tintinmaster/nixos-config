@@ -8,9 +8,12 @@
 		signal-desktop
     speedtest-cli
 		spotify
+    gimp
 		thunderbird
     vscodium
+    wofi-emoji
 		zathura
+    freecad-wayland
   ])
 
   ++

@@ -9,10 +9,10 @@
 			"$terminal" = "kitty";
 
 			monitor = [
-			"desc:LG Display 0x06CE, 1920x1200, auto, 1"
-      "desc:Ancor Communications Inc VS278 F3LMQS135349, preffered, auto-up, 1"
-        #"desc:Dell Inc. DELL U2723QE 10W4934, preffered, auto-right, 1"
-			",preffered, auto-right, auto"
+			"desc:LG Display 0x06CE, 1920x1200, 0x0, 1"
+      "desc:Ancor Communications Inc VS278 F3LMQS135349, preffered, -1920x0, 1"
+        "desc:Lenovo Group Limited LEN T27i-10 V5BVX220, preffered, -3000x-500, 1, transform, 1"
+			",preffered, auto-right, 1"
 			];
 
 			env = [
@@ -137,7 +137,7 @@
 				"hypridle"
         "[workspace special silent] ferdium"
         "[workspace 1] $terminal"
-        "[workspace 2 silent] firefox"
+        "[workspace 2 silent] zen"
         "[workspace 3 silent] obsidian"
         "wl-paste --type text --watch cliphist store"
         "wl-paste --type image --watch cliphist store"
@@ -152,6 +152,7 @@
 				"$mainMod, E, exec, dolphin"
 				"$mainMod, F, togglefloating,"
 				"$mainMod, D, exec, wofi --show drun"
+        "$mainMod, X, exec, wofi-emoji"
 				"$mainMod, P, pseudo, # dwindle"
 				"$mainMod, J, togglesplit, # dwindle"
 				"$mainMod, L, exec, pidof hyprlock || hyprlock > ~/hyprlock.log"
