@@ -7,6 +7,7 @@
     
     ./editor/neo-tree.nix
     ./editor/treesitter.nix
+    ./editor/render-markdown.nix
 
     ./git/gitsigns.nix
     ./git/lazygit.nix
