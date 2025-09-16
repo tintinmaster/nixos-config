@@ -4,9 +4,14 @@
 
     settings = {
       enable_audio_bell = false;
-      visual_bell_duration = "1.0";
+      visual_bell_duration = "1.5";
 
+      font_family = "family='FiraCode Nerd Font Mono' postscript_name=FiraCodeNFM-Reg";
+      bold_font = "auto";
+      italic_font = "auto";
+      bold_italic_font= "auto";
 
+      tab_bar_style = "powerline";
 
       #Theme Dracula
       foreground            = "#f8f8f2";
@@ -47,6 +52,7 @@
       "ctrl+kp_minus" = "change_font_size all -1.0";
       "ctrl+shift+c" = "copy_and_clear_or_interrupt";
       "ctrl+c" =  "copy_or_interrupt";
+      "ctrl+shift+t" = "new_tab_with_cwd";
     };
   };
 }

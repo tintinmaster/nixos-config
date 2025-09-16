@@ -6,11 +6,11 @@
 
 	users = {
 		defaultUserShell = pkgs.zsh;
-		
+
 		users.tim = {
 			isNormalUser = true;
 			description = "Tim";
-			extraGroups = [ "networkmanager" "wheel" "input" "libvirtd" "plugdev" "dialout" "lp" "usrp"];
+			extraGroups = [ "networkmanager" "wheel" "input" "libvirtd" "plugdev" "dialout" "lp" "usrp" "docker"];
 			packages = with pkgs; [];
 		};
 	};

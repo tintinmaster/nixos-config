@@ -113,18 +113,14 @@
 				animate_manual_resizes = true;
 				animate_mouse_windowdragging = true;
 				enable_swallow = true;
-				render_ahead_of_time = false;
 				disable_hyprland_logo = true;
 			};
 
 
-			windowrule = [
-				"float, ^(imv)$"
-				"float, ^(mpv)$"
-        "workspace special, ^(Ferdium)$"
-			];
-
       windowrulev2 = [
+				"float, class:^(imv)$"
+				"float, class:^(mpv)$"
+        "workspace special, class:^(Ferdium)$"
         "bordercolor rgb(ff5555),xwayland:1" # check if window is xwayland
         "idleinhibit fullscreen, fullscreen:1"
       ];
@@ -136,9 +132,8 @@
 				"waybar"
 				"hypridle"
         "[workspace special silent] ferdium"
-        "[workspace 1] $terminal"
+        "[workspace 1] $terminal btop"
         "[workspace 2 silent] zen"
-        "[workspace 3 silent] obsidian"
         "wl-paste --type text --watch cliphist store"
         "wl-paste --type image --watch cliphist store"
 			];

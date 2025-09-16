@@ -1,4 +1,5 @@
-{ pkgs, ... }: {
+{ pkgs, ... }:
+{
   nixpkgs.config = {
     allowUnfree = true;
   };
@@ -9,28 +10,35 @@
     chromium
     obsidian
     zoom-us
+    vlc
 
     # Coding stuff
-    (python3.withPackages (ps: with ps; [
-      pip
-      numpy
-      scipy
-      jupyter
-      notebook
-      python-dotenv
-      pandas
-      requests 
-      pyquery 
-      udiskie
-    ]))
+    (python3.withPackages (
+      ps: with ps; [
+        pip
+        numpy
+        scipy
+        jupyter
+        notebook
+        python-dotenv
+        pandas
+        requests
+        pyquery
+        udiskie
+      ]
+    ))
     cachix
     devenv
     gcc
     clang-tools
+    ollama
     vim
-    jetbrains.clion
     jetbrains.pycharm-professional
-    jetbrains.rust-rover
+    #jetbrains.rust-rover
+    (jetbrains.plugins.addPlugins jetbrains.clion [
+      "ideavim"
+      "rainbow-brackets"
+    ])
 
     #Writing
     typst
@@ -41,10 +49,10 @@
     bluez
     bluez-tools
     btop
+    docker-compose
     udisks
     fastfetch
     fd
-    flashrom
     file
     fzf
     git
@@ -57,30 +65,32 @@
     ripgrep
     sshfs
     tio
+    tldr
     tree
     unzip
     wget
+    yazi
     zip
 
     # Wayland stauff
     brightnessctl
     cliphist
-    kdePackages.dolphin
     libsForQt5.qt5.qtwayland
     qt5.qtwayland
     qt6.qtwayland
     wl-clipboard
     xwayland
+    swayidle
 
     # WMs and stuff
-    dunst 		#Notifications
+    dunst # Notifications
     hypridle
     hyprland
     hyprlock
     hyprshade
     hyprshot
     seatd
-    swww 		  #Wallpaper
+    swww # Wallpaper
     waybar
     wofi
     xdg-desktop-portal-hyprland
@@ -92,7 +102,6 @@
     pulseaudio
 
     #Other
-    darktable
     davfs2
     enpass
     home-manager
@@ -100,8 +109,14 @@
     xdg-utils
     wireguard-tools
 
+    tor-browser
+    deluged
+
     #Master thesis
     gpsd
+
+    #master
+    ghidra
   ];
 
   fonts.packages = with pkgs; [
@@ -113,6 +128,7 @@
     powerline-fonts
     powerline-symbols
     nerd-fonts.symbols-only
+    nerd-fonts.fira-code
     #(nerdfonts.override { fonts = [ "NerdFontsSymbolsOnly" ]; })
   ];
 }

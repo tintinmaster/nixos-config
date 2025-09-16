@@ -4,7 +4,7 @@
     ./cmp/cmp-copilot.nix
     ./cmp/cmp.nix
     ./cmp/lspkind.nix
-    
+
     ./editor/neo-tree.nix
     ./editor/treesitter.nix
     ./editor/render-markdown.nix
@@ -24,6 +24,7 @@
     ./utils/mini.nix
     ./utils/telescope.nix
     ./utils/toggleterm.nix
+    ./utils/typst.nix
     ./utils/whichkey.nix
   ];
 }

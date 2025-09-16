@@ -3,12 +3,15 @@
 	
   home.packages = 
   ( with pkgs; [
+    discord
     ferdium
     kitty-themes
 		signal-desktop
     speedtest-cli
 		spotify
     gimp
+    glow # command line markdown viewer
+    telegram-desktop
 		thunderbird
     vscodium
     wofi-emoji
