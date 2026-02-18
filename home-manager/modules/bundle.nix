@@ -5,6 +5,7 @@
     ./kitty.nix
     ./wofi.nix
     ./systemd.nix
+    ./syncthing.nix
     ./wms/hypridle.nix
     ./wms/hyprland.nix
     ./wms/hyprlock.nix

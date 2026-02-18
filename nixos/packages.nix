@@ -11,6 +11,7 @@
     obsidian
     zoom-us
     vlc
+    josm
 
     # Coding stuff
     (python3.withPackages (
@@ -29,21 +30,24 @@
     ))
     cachix
     devenv
+    ltex-ls
+    ltex-ls-plus
     gcc
     clang-tools
     ollama
     vim
-    jetbrains.pycharm-professional
-    #jetbrains.rust-rover
-    (jetbrains.plugins.addPlugins jetbrains.clion [
-      "ideavim"
-      "rainbow-brackets"
-    ])
+    jetbrains.pycharm
+    jetbrains.clion 
+    #jetbrains.rust-roverjetbrains.clion 
+    #(jetbrains.plugins.addPlugins jetbrains.clion [
+    #  "ideavim"
+    #  "rainbow-brackets"
+    #])
 
     #Writing
     typst
     tinymist
-    typstyle
+    zotero
 
     # CLI utils
     bluez
@@ -105,9 +109,13 @@
     davfs2
     enpass
     home-manager
+    logiops
     kitty
     xdg-utils
     wireguard-tools
+    openvpn
+
+    nixos-container
 
     tor-browser
     deluged
@@ -121,7 +129,7 @@
 
   fonts.packages = with pkgs; [
     noto-fonts
-    noto-fonts-emoji
+    noto-fonts-color-emoji
     fira-code
     fira-code-symbols
     font-awesome

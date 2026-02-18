@@ -1,3 +1,6 @@
-{
-	networking.networkmanager.enable = true;
+{pkgs, ...}: {
+	networking.networkmanager = {
+    enable = true;
+    plugins = [ pkgs.networkmanager-openvpn ];
+  };
 }

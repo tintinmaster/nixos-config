@@ -1,6 +1,9 @@
 {
   programs.wofi = {
     enable = true;
+    settings= {
+      term = "kitty";
+    };
     style = ''
 window {
   margin: 5px;

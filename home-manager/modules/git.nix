@@ -1,11 +1,13 @@
 {
-	programs.git = {
-		enable = true;
-		userName = "Tim Schneider";
-		userEmail = "tim.schneider1337@gmail.com";
+  programs.git = {
+    enable = true;
 
-    extraConfig = {
+    settings = {
+      user = {
+        name = "Tim Schneider";
+        email = "tim.schneider1337@gmail.com";
+      };
       init.defaultBranch = "main";
     };
-	};
+  };
 }

@@ -1,5 +1,5 @@
 {
   services.logind = {
-    lidSwitchDocked = "ignore";
+    settings.Login.HandleLidSwitchDocked = "ignore";
   };
 }

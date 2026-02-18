@@ -1,6 +1,6 @@
 {
   programs.nixvim.plugins = {
-    typst-vim = {
+    typst-preview = {
       enable = true;
     };
   };

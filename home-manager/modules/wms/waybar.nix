@@ -6,7 +6,11 @@
         output = [
           "eDP-1"
           "Ancor Communications Inc VS278 F3LMQS135349"
-          "Dell"
+          "Dell Inc. DELL U2723QE 7610DP3"
+          "Dell Inc. DELL U2724DE 5KJPB34"
+          "Dell Inc. DELL U2725QE BMD4D84"
+          "Dell Inc. DELL"
+          "DELL U2723QE"
         ];
         layer = "top";
         position = "top";

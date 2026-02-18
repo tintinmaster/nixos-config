@@ -37,6 +37,10 @@
           };
           tinymist = {
             enable = true;
+            settings = {
+              exportPDF = "auto";
+              formatterMode = "typstyle";
+            };
           };
         };
 
